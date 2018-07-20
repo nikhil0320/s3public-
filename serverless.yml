@@ -41,8 +41,3 @@ functions:
       EmailRegion: us-east-1
       logLevel: DEBUG
       Notifications: 'True'
-<<<<<<< HEAD
-  
-=======
-  
->>>>>>> cbfdebdded4c216034b153aa26e80307dde985bf

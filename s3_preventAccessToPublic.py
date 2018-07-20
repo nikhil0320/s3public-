@@ -9,14 +9,14 @@ Sample event is on this module directory(event.json). This module is designed to
 """
 import os
 import botocore
-from utils.common import get_config, notify_email, get_aws_resource
+from utils.common import get_config, notify_email, get_aws_client
 from utils.logger import LoggerUtils as logger
 
 # global variables
 s3Bucket = os.environ['CONF_S3BUCKET']
 s3Key = os.environ['CONF_DenyPolicy']
 defaultDenyPolicy = get_config(s3Bucket, s3Key)
-bucketList = get_config(s3Bucket, {subscriberAccountId}.json)
+bucketList = get_config(s3Bucket,"095139704753.json")
 toEmail = os.environ['ToEmail']
 fromEmail = os.environ['FromEmail']
 roleName = os.environ['ROLE_NAME']
@@ -41,7 +41,7 @@ def replace_resource_arn_with_bucketName(bucketName, defaultDenyPolicy):
             if resource in ['arn:aws:s3:::examplebucket/*', 'arn:aws:s3:::examplebucket']:
                 replacingWithBucketName = resource.replace("examplebucket", bucketName)
                 logger.info(f'Replacing examplebucket in the defaultDenyPolicy with {bucketName}')
-                newBucketDenyPolicy = defaultDenyPolicy.write(replacingWithBucketName)
+            return defaultDenyPolicy.write(replacingWithBucketName)
     except Exception as e:
         logger.debug(f'Got error: {e} while replacing the resource ARN with bucket name')
 
@@ -55,7 +55,7 @@ def apply_policy_to_new_bucket(bucketName, s3, newBucketDenyPolicy, subscriberAc
         notify_email(toEmail, fromEmail, message)
     except Exception as e:
         message = f'Got error: {e} while applying the bucket policy to the bucket: {bucketName} in the {subscriberAccountId} account in the {awsRegion} region'
-        logger.error(message)
+        logger.debug(message)
         notify_email(toEmail, fromEmail, message)
         logger.debug(f'Notifying the recepient of the error')
         raise e
@@ -72,13 +72,14 @@ def lambda_handler(event, context):
     logger.debug(f'Found the event {eventName}')
     bucketName = event['detail']['requestParameters']['bucketName']
     logger.debug(f'Found the bucket: {bucketName}')
-
+    print(defaultDenyPolicy)
+    print(type(defaultDenyPolicy))
     s3 = get_aws_client('s3', subscriberAccountId, awsRegion, roleName, sessionName)
 
-    if eventName == 'createBucket':
-        logger.info(f'Executing the Lambda function as the event is {eventName}')
-        replace_resource_arn_with_bucketName(bucketName, defaultDenyPolicy)
-        apply_policy_to_new_bucket(bucketName, s3, newBucketDenyPolicy, subscriberAccountId, awsRegion)
+    if eventName == 'CreateBucket':
+        logger.debug(f'Executing the Lambda function as the event is {eventName}')
+        #newBucketDenyPolicy= replace_resource_arn_with_bucketName(bucketName, defaultDenyPolicy)
+        apply_policy_to_new_bucket(bucketName, s3,defaultDenyPolicy, subscriberAccountId, awsRegion)
 
     elif eventName in ['PutBucketPolicy', 'DeleteBucketPolicy']:
         logger.info(f'Executing the Lambda function as the event is {eventName}')

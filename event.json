@@ -31,7 +31,7 @@
     "sourceIPAddress": "61.12.88.78",
     "userAgent": "signin.amazonaws.com",
     "requestParameters": {
-      "bucketName": "tests3eventbucketnikhil"
+      "bucketName": "deloittedemo111"
     },
     "responseElements": "None",
     "additionalEventData": {
