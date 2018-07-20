@@ -1,0 +1,45 @@
+{
+  "version": "0",
+  "id": "cd8cb22a-1e57-4153-0f0c-65cff7d27bac",
+  "detail-type": "AWSAPICallviaCloudTrail",
+  "source": "aws.s3",
+  "account": "095139704753",
+  "time": "2018-07-05T05: 08: 38Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.05",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDAIZNNSXNGXLSYJAHVM",
+      "arn": "arn: aws: iam: : 639015715993: user/nikhil.linga@reancloud.com",
+      "accountId": "",
+      "accessKeyId": "ASIAJLO2VHLSYV5CEXVA",
+      "userName": "nikhil.linga@reancloud.com",
+      "sessionContext": {
+        "attributes": {
+          "mfaAuthenticated": "true",
+          "creationDate": "2018-07-05T04: 56: 38Z"
+        }
+      },
+      "invokedBy": "signin.amazonaws.com"
+    },
+    "eventTime": "2018-07-05T05: 08: 38Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "CreateBucket",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "61.12.88.78",
+    "userAgent": "signin.amazonaws.com",
+    "requestParameters": {
+      "bucketName": "tests3eventbucketnikhil"
+    },
+    "responseElements": "None",
+    "additionalEventData": {
+      "vpcEndpointId": "vpce-b32f85da"
+    },
+    "requestID": "5CB9C4142C5F1DBA",
+    "eventID": "6021bb52-f188-4374-b041-4024a7620778",
+    "eventType": "AwsApiCall",
+    "vpcEndpointId": "vpce-b32f85da"
+  }
+}
