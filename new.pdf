@@ -1,0 +1,218 @@
+<table>
+    <tr>
+        <th>service_name</th>
+        <th>invoiced_cost<br></th>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Elastic Compute Cloud&quot;,912.8402865241004<br></td>
+        <td>&quot;Amazon Elastic Compute Cloud&quot;,912.8402865241004<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Relational Database Service&quot;,731.0982090349012<br></td>
+        <td>&quot;Amazon Relational Database Service&quot;,731.0982090349012<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Elasticsearch Service&quot;,314.2900001280001<br></td>
+        <td>&quot;Amazon Elasticsearch Service&quot;,314.2900001280001<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Config&quot;,44.82800000000015<br></td>
+        <td>&quot;AWS Config&quot;,44.82800000000015<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS CloudTrail&quot;,20.670819999999985<br></td>
+        <td>&quot;AWS CloudTrail&quot;,20.670819999999985<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Key Management Service&quot;,18.743042119399917<br></td>
+        <td>&quot;AWS Key Management Service&quot;,18.743042119399917<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Service Catalog&quot;,5.26<br></td>
+        <td>&quot;AWS Service Catalog&quot;,5.26<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Lambda&quot;,1.5929472178999977<br></td>
+        <td>&quot;AWS Lambda&quot;,1.5929472178999977<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Step Functions&quot;,1.2866762168000012<br></td>
+        <td>&quot;AWS Step Functions&quot;,1.2866762168000012<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Simple Storage Service&quot;,1.054181876499989<br></td>
+        <td>&quot;Amazon Simple Storage Service&quot;,1.054181876499989<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon EC2 Container Service&quot;,0.013475161499999999<br></td>
+        <td>&quot;Amazon EC2 Container Service&quot;,0.013475161499999999<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Athena&quot;,0.006949999999999997<br></td>
+        <td>&quot;Amazon Athena&quot;,0.006949999999999997<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Simple Notification Service&quot;,0.0064499996999999995<br></td>
+        <td>&quot;Amazon Simple Notification Service&quot;,0.0064499996999999995<br></td>
+    </tr>
+    <tr>
+        <td>&quot;CloudWatch Events&quot;,0.00023799999999999996<br></td>
+        <td>&quot;CloudWatch Events&quot;,0.00023799999999999996<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Budgets&quot;,0.0<br></td>
+        <td>&quot;AWS Budgets&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Glue&quot;,0.0<br></td>
+        <td>&quot;AWS Glue&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Secrets Manager&quot;,0.0<br></td>
+        <td>&quot;AWS Secrets Manager&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon API Gateway&quot;,0.0<br></td>
+        <td>&quot;Amazon API Gateway&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon CloudFront&quot;,0.0<br></td>
+        <td>&quot;Amazon CloudFront&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Cognito&quot;,0.0<br></td>
+        <td>&quot;Amazon Cognito&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon DynamoDB&quot;,0.0<br></td>
+        <td>&quot;Amazon DynamoDB&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon EC2 Container Registry (ECR)&quot;,0.0<br></td>
+        <td>&quot;Amazon EC2 Container Registry (ECR)&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon GuardDuty&quot;,0.0<br></td>
+        <td>&quot;Amazon GuardDuty&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Inspector&quot;,0.0<br></td>
+        <td>&quot;Amazon Inspector&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Simple Queue Service&quot;,0.0<br></td>
+        <td>&quot;Amazon Simple Queue Service&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AmazonCloudWatch&quot;,0.0<br></td>
+        <td>&quot;AmazonCloudWatch&quot;,0.0<br></td>
+    </tr>
+    <tr>
+        <td>service_name</td>
+        <td>invoiced_cost<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Elastic Compute Cloud&quot;</td>
+        <td>912.8402865241004<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Relational Database Service&quot;</td>
+        <td>731.0982090349012<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Elasticsearch Service&quot;</td>
+        <td>314.2900001280001<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Config&quot;</td>
+        <td>44.82800000000015<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS CloudTrail&quot;</td>
+        <td>20.670819999999985<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Key Management Service&quot;</td>
+        <td>18.743042119399917<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Service Catalog&quot;</td>
+        <td>5.26<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Lambda&quot;</td>
+        <td>1.5929472178999977<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Step Functions&quot;</td>
+        <td>1.2866762168000012<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Simple Storage Service&quot;</td>
+        <td>1.054181876499989<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon EC2 Container Service&quot;</td>
+        <td>0.013475161499999999<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Athena&quot;</td>
+        <td>0.006949999999999997<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Simple Notification Service&quot;</td>
+        <td>0.0064499996999999995<br></td>
+    </tr>
+    <tr>
+        <td>&quot;CloudWatch Events&quot;</td>
+        <td>0.00023799999999999996<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Budgets&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Glue&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AWS Secrets Manager&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon API Gateway&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon CloudFront&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Cognito&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon DynamoDB&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon EC2 Container Registry (ECR)&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon GuardDuty&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Inspector&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;Amazon Simple Queue Service&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+    <tr>
+        <td>&quot;AmazonCloudWatch&quot;</td>
+        <td>0.0<br></td>
+    </tr>
+</table>
