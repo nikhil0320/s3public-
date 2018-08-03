@@ -7,37 +7,11 @@ provider:
   stage: dev
 
 functions:
-  s3_preventAccessToPublic:
-    handler: s3_preventAccessToPublic.lambda_handler
-    name: s3_prevent_access_to_public
-    memorySize: 128
+  FetchReport:
+    handler: FetchReport.lambda_handler
+    memorySize: 512
     timeout: 60
-    role: arn:aws:iam::639015715993:role/LambdaExecutionRole
+    role: arn:aws:iam::639015715993:role/lambda-vpc-execution-role
     versionFunctions: false
-    events:
-      - cloudwatchEvent:
-          name: 's3_preventAccessToPublic'
-          description: "CloudWatch event rule to prevent S3 access to public"
-          event:
-            source:
-              - "aws.s3"
-            detail-type:
-              - "AWS API Call via CloudTrail"
-            detail:
-              eventSource:
-                - s3.amazonaws.com
-              eventName:
-                - CreateBucket
-                - PutBucketPolicy
-                - DeleteBucketPolicy
-
-    environment:
-      CONF_S3BUCKET: s3-prevent-access-to-public
-      CONF_DenyPolicy: denyAccessToPublic_bucketPolicy.json
-      ROLE_NAME: IAMCrossAccounteRole
-      Email_Subject: 'CBCAP: S3- Prevent Access to Public Notifications'
-      ToEmail: snitha.katpally@reancloud.com
-      FromEmail: snitha.katpally@reancloud.com
-      EmailRegion: us-east-1
-      logLevel: DEBUG
-      Notifications: 'True'
+plugins:
+  - serverless-python-requirements
