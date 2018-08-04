@@ -1,0 +1,18 @@
+service: CBCAP-FetchAWSCosts-new
+
+provider:
+  name: aws
+  runtime: python3.6
+  region: us-east-1
+  stage: dev
+
+functions:
+  FetchAWSCosts:
+    name: FetchAWSCosts-dev-new
+    handler: FetchAWSCosts-new.lambda_handler
+    memorySize: 256
+    timeout: 240
+    role: arn:aws:iam::639015715993:role/lambda-vpc-execution-role
+    versionFunctions: false
+plugins:
+  - serverless-python-requirements

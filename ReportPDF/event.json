@@ -1,0 +1,23 @@
+{
+  "Messages": [
+    {
+      "MessageId": "237e4304-fb26-4601-8f80-d525c33af78e",
+      "ReceiptHandle": "AQEBPnstvyfGr3slVcxdMgQjGWoWI/WormsL2g6AUla+mmncFUwzK3uWZQj4p76kek8Xs8aB5NMwXkCV6eo9imfJZn6QSVEFYSmgS+CaQTQa8JejmwYSrvhoHZ1zHtMrFVYekJ58gOgMQcS8pKgGoyOPVf50WKGUqyutogDJp2d4VlNBzCKBhcjqZnG+0YycjJ/MgUF6uf48GxsmPbxpQ0sSRJTRBpYvi/3/v6UvhtbYiQHnVMhvysAuKsTNDJmPAz2P1EUr3WzeMfBUEHI4lzvnfdlJrubG6fE4nyMedyRPQGw3DTsDGgyEZRgVDQVB24RYGNSsBjKDZU6O1rjodQqrn290zwlXr4lr/1FliaKFN7JJh5Gd2bmWtPJQr7QYlgqfCl5FLQit4Q3MEMpWtpX/2Q==",
+      "MD5OfBody": "f886c51c2cbb8e8b7a9cd3aaaafe7b5c",
+      "Body": "{\"WBS_Detils\":{\"WBSNumber\":\"XYZ\",\"Account_No\":[\"699432268424\", \"6146-3008-9683\"],\"Email\":\"nikhil.linga@reancloud.com\"}}"
+    }
+  ],
+  "ResponseMetadata": {
+    "RequestId": "55b315a7-becb-548f-b3b4-467dacd58a93",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "server": "Server",
+      "date": "Tue, 31 Jul 2018 07:29:34 GMT",
+      "content-type": "text/xml",
+      "content-length": "1050",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "55b315a7-becb-548f-b3b4-467dacd58a93"
+    },
+    "RetryAttempts": 0
+  }
+}

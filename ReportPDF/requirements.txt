@@ -1,0 +1,2 @@
+requests==2.19.1
+xhtml2pdf==0.2.2
