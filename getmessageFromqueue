@@ -1,0 +1,28 @@
+import boto3
+import json
+
+def lambda_handler(event, context):
+    message = ''
+    
+    sqsClient = boto3.client('sqs')
+    queueUrl = 'https://sqs.us-east-1.amazonaws.com/u4958495540/InvoiceQueue.fifo'
+    
+    response = sqsClient.get_queue_attributes(
+        QueueUrl=queueUrl,
+        AttributeNames=[
+            'ApproximateNumberOfMessages'
+        ]
+    )
+    print(response)
+    number_of_messages = response['Attributes']['ApproximateNumberOfMessages']
+    
+    if int(number_of_messages) != 0:
+        message = sqsClient.receive_message(QueueUrl = queueUrl,MaxNumberOfMessages = 1)
+        try:
+            receiptHandle = message['Messages'][0]['ReceiptHandle']
+            sqsClient.delete_message(QueueUrl= queueUrl ,ReceiptHandle= receiptHandle)
+        except Exception as e:
+            pass
+        return  message
+    else:
+        return False
