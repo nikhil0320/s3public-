@@ -1,0 +1,95 @@
+<html>
+<head>
+<style>
+@page {
+        size: letter portrait;
+        font-size: 16px;
+        @frame content_frame {          /* Content Frame */
+            left: 50pt; width: 512pt; top: 16pt; height: auto;
+        }
+        @frame footer_frame {           /* Static frame */
+            -pdf-frame-content: footer_content;
+            left: 50pt; width: 512pt; bottom: 10pt; height: 16pt;
+        }
+    }
+          table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; }
+          tr,td { border: 1px solid black; text-align: left; padding: 4px; }
+          th { border: 1px black; padding-top: 4px;padding-bottom:1px;}
+          h1{ text-align:center; text-decoration: underline; }
+          td.costs {text-align:right;}
+          p{font-size: 18px;}
+</style>
+</head>
+<body>
+     <p>Your team has incurred the following costs this quarter.Your WBS will be charged by the end of the week.</p>
+      <table>
+         <tbody>
+            <tr>
+               <th colspan=2>
+                  <h1>CBCAP Quarterly Invoice</h1>
+               </th>
+            </tr>
+            <tr>
+               <td>InvoiceDate</td>
+               <td class=costs>{{ todayDate  }}</td>
+            </tr>
+            <tr>
+               <td>Application Number</td>
+               <td class=costs>{{ applicationNumber  }}</td>
+            </tr>
+            <tr>
+               <td>Application Name</td>
+               <td class=costs>{{ ApplicationName  }}</td>
+            </tr>
+            <tr>
+               <td>WBS</td>
+               <td class=costs>{{ WBSNo }}</td>
+            </tr>
+            <tr>
+               <td>Sponser PPMD </td>
+               <td class=costs>{{ SponserPPMD }}</td>
+            </tr>
+            <tr>
+               <td>InvoiceNumber</td>
+               <td class=costs>{{ InvoiceNumber }}</td>
+            </tr>
+            <tr>
+               <td>Billing Period</td>
+               <td class=costs>{{ period }}</td>
+            </tr>
+
+            <tr>
+               <td><strong>Estimate Total</strong></td>
+               <td class=costs><strong>{{ AllTotal }}</strong></td>
+            </tr>
+            </table>
+            <table>
+            <tr>
+               <th colspan=2>Hosting Details:</th>
+            </tr>
+
+            {{ AWSDetails }}
+          
+            <tr>
+               <td>Hosting Total</td>
+               <td class=costs>{{ total }}</td>
+            </tr>
+</table>
+<table>
+            <tr>
+               <th colspan=2 >3rd party licence details:</th>
+            </tr>
+            
+               {{ ThirdPartySoftware }}
+            
+            <tr>
+               <td>3rd party licenceTotal</td>
+               <td class=costs>{{ ThirdPartySoftwareTotal }}</td>
+            </tr>
+         </tbody>
+      </table>
+      <div id="footer_content">copyright &copy; 2018 Deloitte Development LLC.All rights reserved.</div>
+
+</body>
+</html>
+
